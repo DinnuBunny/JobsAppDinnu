@@ -1,0 +1,31 @@
+/* FilterComponent */
+.employment-filter {
+  padding-left: 0px;
+  font-family: roboto;
+}
+
+.filter-heading {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.filter-card {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}

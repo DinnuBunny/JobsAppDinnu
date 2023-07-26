@@ -1,0 +1,27 @@
+/* ProfileComponent */
+.profile-container {
+  color: #ffffff;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: auto;
+  width: 220px;
+  height: 180px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 50px;
+}
+
+.profile-name {
+  color: #6366f1;
+  font-size: 18px;
+}
+
+.profile-short-bio {
+  color: #2c364c;
+  font-size: 14px;
+  margin-top: 0px;
+}

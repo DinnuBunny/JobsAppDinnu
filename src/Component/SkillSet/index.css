@@ -1,0 +1,25 @@
+.skills-head {
+  font-size: 20px;
+}
+
+.skills-un-ordered-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding-left: 0;
+  width: 90%;
+  font-family: roboto;
+}
+
+.skill-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-image {
+  margin-right: 10px;
+  width: 70px;
+}

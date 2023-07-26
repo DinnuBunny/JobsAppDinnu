@@ -1,0 +1,14 @@
+.error-container {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.not-found {
+  width: 30%;
+}
