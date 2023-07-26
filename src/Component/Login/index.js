@@ -99,6 +99,11 @@ class Login extends Component {
             </button>
             {isLoginSuccess === false && this.getTheErrorResponse()}
           </form>
+          <p className="sample-username">
+            Samples - Username:
+            <span className="credentials"> rahul</span> Password:{' '}
+            <span className="credentials"> rahul@2021</span>
+          </p>
         </div>
       </div>
     )

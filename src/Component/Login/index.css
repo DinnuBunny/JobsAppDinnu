@@ -77,3 +77,12 @@
 .error {
   color: #ff0b37;
 }
+
+.sample-username {
+  color: #ffffff;
+}
+
+.credentials {
+  color: #4f46e5;
+  font-size: 18px;
+}
