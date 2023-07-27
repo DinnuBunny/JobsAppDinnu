@@ -265,6 +265,25 @@ class Jobs extends Component {
     }
   }
 
+  renderSearchFormContainer = () => (
+    <>
+      <input
+        type="search"
+        className="search-input"
+        onChange={this.onEnterSearchText}
+        placeholder="Search"
+      />
+      <button
+        type="button"
+        className="search-icon-btn"
+        data-testid="searchButton"
+        onClick={this.onClickSearch}
+      >
+        <AiOutlineSearch className="search-icon" />
+      </button>
+    </>
+  )
+
   render() {
     const {apiProfileStatus} = this.state
     const jobsListView = this.getTheListOfJobs()
@@ -272,6 +291,12 @@ class Jobs extends Component {
       <>
         <Header />
         <div className="jobs-container">
+          <form
+            className="search-container search-md"
+            onSubmit={this.onClickSearch}
+          >
+            {this.renderSearchFormContainer()}
+          </form>
           <div className="profile-filter-container">
             {apiProfileStatus === apiConsts.loading &&
               this.renderProfileLoadingView()}
@@ -286,21 +311,11 @@ class Jobs extends Component {
           </div>
 
           <div className="jobs-search-container">
-            <form className="search-container" onSubmit={this.onClickSearch}>
-              <input
-                type="search"
-                className="search-input"
-                onChange={this.onEnterSearchText}
-                placeholder="Search"
-              />
-              <button
-                type="button"
-                className="search-icon-btn"
-                data-testid="searchButton"
-                onClick={this.onClickSearch}
-              >
-                <AiOutlineSearch className="search-icon" />
-              </button>
+            <form
+              className="search-container search-lg"
+              onSubmit={this.onClickSearch}
+            >
+              {this.renderSearchFormContainer()}
             </form>
             {jobsListView}
           </div>

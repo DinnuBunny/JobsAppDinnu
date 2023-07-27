@@ -1,3 +1,7 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+}
 .skills-head {
   font-size: 20px;
 }
@@ -6,20 +10,43 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 10px;
   padding-left: 0;
   width: 90%;
   font-family: roboto;
+  align-self: center;
 }
 
 .skill-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 5px;
+  width: 180px;
 }
 
 .skill-image {
   margin-right: 10px;
   width: 70px;
+}
+
+@media (max-width: 768px) {
+  .skills-head {
+    font-size: 16px;
+  }
+
+  .skills-un-ordered-list {
+    justify-content: space-between;
+  }
+
+  .skill-list {
+    margin: 5px;
+    width: 120px;
+    justify-content: flex-start;
+  }
+
+  .skill-image {
+    width: 40px;
+  }
 }

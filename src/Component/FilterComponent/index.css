@@ -4,6 +4,12 @@
   font-family: roboto;
 }
 
+@media (max-width: 768px) {
+  .employment-filter {
+    margin-left: 20px;
+  }
+}
+
 .filter-heading {
   color: #ffffff;
   font-size: 22px;

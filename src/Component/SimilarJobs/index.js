@@ -23,10 +23,10 @@ const SimilarJobs = props => {
           <img
             src={companyLogoUrl}
             alt="similar job company logo"
-            className="company-logo"
+            className="similar-jobs-company-logo"
           />
           <div className="title-rating-card">
-            <h1 className="job-card-title">{title}</h1>
+            <h1 className="similar-jobs-card-title">{title}</h1>
             <div className="rating-card">
               <AiFillStar className="star-icon" />
               <p className="rating-para">{rating}</p>

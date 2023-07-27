@@ -22,9 +22,19 @@
   display: flex;
   align-items: center;
 }
-.company-logo {
-  width: 50px;
+
+.job-card-company-logo {
+  width: 70px;
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .job-item-list {
+    padding: 15px;
+  }
+  .job-card-company-logo {
+    width: 50px;
+  }
 }
 
 .title-rating-card {
@@ -53,6 +63,12 @@
 
 .rating-para {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .job-card-title {
+    font-size: 20px;
+  }
 }
 
 .location-type-package-card {
@@ -103,4 +119,15 @@
 .description {
   font-size: 14px;
   line-height: 1.4;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .description-head {
+    font-size: 20px;
+  }
+  .description {
+    line-height: 1.5;
+    font-weight: 300;
+  }
 }

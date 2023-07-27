@@ -26,7 +26,7 @@ li {
     width: 80px;
   }
   .header-container {
-    justify-content: space-between;
+    padding-right: 10px;
   }
 }
 

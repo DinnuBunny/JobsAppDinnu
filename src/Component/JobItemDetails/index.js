@@ -95,7 +95,6 @@ class JobItemDetails extends Component {
       companyLogoUrl,
       companyWebSiteUrl,
       employmentType,
-      id,
       jobDescription,
       lifeAtCompany,
       location,

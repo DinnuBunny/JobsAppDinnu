@@ -16,3 +16,25 @@
   margin-right: 20px;
   list-style-type: none;
 }
+
+@media (max-width: 768px) {
+  .similar-job-details-card {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .similar-jobs-company-logo {
+    width: 50px;
+  }
+}
+
+.similar-jobs-company-logo {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.similar-jobs-card-title {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
