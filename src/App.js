@@ -8,6 +8,7 @@ import JobItemDetails from './Component/JobItemDetails'
 import NotFound from './Component/NotFound'
 import './App.css'
 
+// ccbp publish RJSCPAW11J dinnujobapp.ccbp.tech
 // Replace your code here
 const App = () => (
   <div className="responsive-container">
