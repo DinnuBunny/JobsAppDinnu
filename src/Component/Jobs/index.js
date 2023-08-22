@@ -1,4 +1,3 @@
-// Jobs
 import {Component} from 'react'
 import Cookie from 'js-cookie'
 import Loader from 'react-loader-spinner'

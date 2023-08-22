@@ -23,10 +23,22 @@ class JobItemDetails extends Component {
   state = {jobDetails: {}, similarJobs: [], apiStatus: apiConsts.initial}
 
   componentDidMount() {
-    this.getTheJobItemDetailsData()
+    const {match} = this.props
+    const jobId = match.params.id
+    this.getTheJobItemDetailsData(jobId)
+  }
+
+  componentDidUpdate(prevProps) {
+    const prevJobId = prevProps.match.params.id
+    const {match} = this.props
+    const presentJobId = match.params.id
+    if (presentJobId !== prevJobId) {
+      this.getTheJobItemDetailsData(presentJobId)
+    }
   }
 
   onSuccessfulApi = data => {
+    window.scroll(0, 0)
     const jobDetails = data.job_details
     const similarJobs = data.similar_jobs
     const updatedJobDetails = {
@@ -66,11 +78,9 @@ class JobItemDetails extends Component {
     })
   }
 
-  getTheJobItemDetailsData = async () => {
+  getTheJobItemDetailsData = async id => {
     this.setState({apiStatus: apiConsts.loading})
     const token = Cookie.get('jwt_token')
-    const {match} = this.props
-    const {id} = match.params
     const apiUrl = `https://apis.ccbp.in/jobs/${id}`
     const options = {
       method: 'GET',
@@ -89,7 +99,6 @@ class JobItemDetails extends Component {
 
   renderJobItemSuccessView = () => {
     const {jobDetails, similarJobs} = this.state
-    console.log(similarJobs)
 
     const {
       companyLogoUrl,
